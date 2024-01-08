@@ -21,7 +21,7 @@ app = Flask("__name__")
 
 
 auth = Blueprint('auth', __name__)
-app.secret_key = 'ijhuljhu hukhouhku'
+app.secret_key = 'eefsefsfefe efsfefesttu'
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 migrate = Migrate(app, db)
 
