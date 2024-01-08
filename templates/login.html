@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../static/CSS/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a class="logo" href="#">
+          <i class="fa-brands fa-google"></i>
+        </a>
+      </div>
+
+      <div class="content">
+        <h1>Log in to Flask App</h1>
+
+        <div class="action-buttons">
+          <button class="primary-button sign-in-button" onclick="location.href='/login-by-google';">
+            <object data="../static/img/google.svg"></object>
+            <span>Sign in with Google</span>
+          </button>
+          <button class="primary-button sign-in-button" onclick="location.href='https://support.apple.com/en-us/HT204053';">
+            <object data="../static/img/apple.svg"></object>
+            <span>Sign in with Apple</span>
+          </button>
+        </div>
+
+        <div class="divider">
+          <p>or</p>
+        </div>
+        <form method="POST">
+        <div class="email-log-in">
+          <input   type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+          required>
+          <label for="email"> Email</label>
+        </div>
+<br>
+        <div class="password-log-in">
+          <input 
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        />
+          <label for="password"> password</label>
+        </div>
+
+        <div class="action-buttons">
+          <button class="primary-button">Next</button>
+        </div>
+        </form>
+      </div>
+    </form>
+      <div class="sign-up">
+        <p>Don't have an account? <a href="/sign-up">Sign up</a></p>
+      </div>
+    </div>
+  </body>
+</html>
